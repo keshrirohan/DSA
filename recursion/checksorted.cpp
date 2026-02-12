@@ -24,6 +24,6 @@ bool issorted( vector<int> &arr,int n){
 
 
 int main(){
-    vector<int> arr={3,4,5,6,7};
+    vector<int> arr={3,4,8,6,7};
     cout<<issorted(arr,5);
 }
