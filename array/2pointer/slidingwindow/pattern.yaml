@@ -1,0 +1,9 @@
+Topic: there is basically four types of patterns in 2 pointer and sliding window problems.
+1. constant Window 
+  eg: a array have integer and we have to find the maximum sum of k consecutive elements in the array.  
+     arr=[1,2,3,4,5] k=2
+     expected output: 9 (4+5)
+  note: 
+     i solved in pattern 1.cpp file.
+     
+  solution: we can use a sliding window of size k and calculate the sum of each window. Then we return the maximum sum among all windows.
