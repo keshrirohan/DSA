@@ -20,3 +20,31 @@ public:
         return finalans;
     }
 };
+
+
+//final apprpoach
+class Solution {
+public:
+    vector<vector<int>> insert(vector<vector<int>>& intervals,
+                               vector<int>& newInterval) {
+        int lst = 1;
+        int frst = 0;
+       
+        vector<vector<int>> finalans;
+        for (auto interval : intervals) {
+            if (interval[lst] < newInterval[frst]) {
+                finalans.push_back(interval);
+            } 
+            else if (newInterval[lst] < interval[frst]) {
+                finalans.push_back(newInterval);
+                newInterval=interval;
+            }
+            else {
+                newInterval[frst]= min(interval[frst],newInterval[frst]);
+                newInterval[lst]= max(interval[lst],newInterval[lst]);
+            }
+        }
+        finalans.push_back(newInterval);
+        return finalans;
+    }
+};
