@@ -1,4 +1,5 @@
 //approach by me 
+// Q is leet 56 is Merge Intervals
 
 class Solution {
 public:
@@ -50,8 +51,7 @@ public:
                     finalans.push_back(ans);
                     ans=intervals[i];
                 }
-
-            
+    
         }
         finalans.push_back(ans);
         return finalans;

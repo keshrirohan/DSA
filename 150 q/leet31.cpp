@@ -1,3 +1,4 @@
+// Q is leet 31 is Next Permutation
 //tried to code by getting the concept 
 class Solution {
 public:
@@ -53,9 +54,7 @@ public:
                 reverse(nums.begin(), nums.end());
             return;
         }else{
-       
 
-         
         while (j > pivot) {
             if (nums[j] > nums[pivot]) {
                 swap(nums[j], nums[pivot]);
@@ -63,10 +62,7 @@ public:
             }
             j--;
         }
-         
-       
-      
-
+        
             reverse(nums.begin() + pivot+1, nums.end());
         }
     }
