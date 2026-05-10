@@ -2,3 +2,5 @@
 // today is 03-5-2026 and i uanble to do anything only the revision take place of the question because today is sunday 
 // no qustion due to practical today is 04-5-2026 
 // today is 05-5-2026 and due to exam i am unable to do anything
+
+//there would be no work from 10 may to 22 may due to my exams and i will be back on 23 may with full energy and enthusiasm to do the work
