@@ -35,3 +35,28 @@ public:
         return maxlcs;
     }
 };
+
+
+
+//optimal approach using hashset 
+    class Solution {
+    public:
+        int longestConsecutive(vector<int>& nums) {
+            unordered_set<int> mp(nums.begin(),nums.end());//uses to store the unique elements of the array and allows for O(1) average time complexity for using find() function
+            int curr;
+            int len=0,ans=0;
+            for(int num : mp){  
+                if(mp.find(num-1)==mp.end()){// finding the continuous lowest among every number 
+                    curr=num;
+                    len=1;
+                    while(mp.find(curr+1)!=mp.end()){// finding the continuous highest among every number
+                        curr++;
+                        len++;
+                    }
+                    ans=max(ans,len);// comparing if there is two consecutive sequence then we will take the maximum of them
+                }
+                
+            }
+            return ans;
+        }
+    };
